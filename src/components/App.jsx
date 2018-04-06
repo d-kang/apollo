@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import { connect } from 'react-redux';
-import Header from './Header';
+import NavBar from './NavBar';
 import Home from './Home';
 
 const mapStateToProps = state => ({
@@ -16,7 +16,7 @@ class App extends PureComponent {
     console.log('this.props', this.props);
     return (
       <div>
-        <Header appName={this.props.appName} />
+        <NavBar appName={this.props.appName} />
         <Home />
       </div>
     );
